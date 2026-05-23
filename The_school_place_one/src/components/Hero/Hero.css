@@ -1,0 +1,250 @@
+@import url(../../themes/variables.css);
+@import url(../../themes/global.css);
+
+
+.leftside_image {
+  width: 19.875rem;
+  height: 9.75rem;
+  transform: rotate(-2deg);
+  position: absolute;
+  top: 0;
+}
+
+
+.rightside_image {
+  width: 13.4375rem;
+  height: 18.1875rem;
+  position: absolute;
+  top: 3.0187rem;
+  left: 101.6125rem;
+}
+
+.rightside_image__crossicon {
+  position: absolute;
+  top: 698.47px;
+  left: 106.6125rem;
+}
+
+.hero {
+  
+  position: relative;
+  background-color: var(--background-color-hero);
+  height: 50.3125rem;
+  width: 100%;
+  max-width: var(--max-width);
+  
+}
+
+.hero_main_content {
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+  display: flex;
+  width: 100%;
+   max-width: var(--max-width);
+}
+
+
+.hero_main_content__title {
+  
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 40.5rem;
+  height: 100%;
+  position: relative;
+  margin-top: 13.6687rem;
+  font-family: var(--font-family-body);
+  margin-right: 0;
+}
+
+.hero_main_content__title___crossicon {
+  width: 1.3125rem;
+  height: 1.3125rem;
+  position: absolute;
+  left: 53.8875rem;
+  top: 8.4231rem;
+}
+
+.hero_main_content__title___header_container {
+  height: 13.8125rem;
+  width: 38.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 0.4594rem;
+}
+
+.hero_main_content__title___header {
+  color: var(--third-color-hero);
+
+  width: 32.7263rem;
+  height: 13.5rem;
+  line-height: 4.5rem;
+  font-weight: bold;
+  justify-self: left;
+  align-self: center;
+  letter-spacing: 0%;
+  font-size: 3.75rem;
+}
+
+.hero_main_content__title___paragraph {
+  color: #333931;
+  font-size: 1.0625rem;
+  line-height: 2.0187rem;
+  justify-self: left;
+  align-self: center;
+  margin-bottom: 1.9156rem;
+  width: 36.7731rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 50px;
+  height: 4.0375rem;
+}
+
+.cloudimage {
+  width: 6.25rem;
+  height: 4.5rem;
+  position: absolute;
+  top: 41.285rem;
+  left: 45.3506rem;
+}
+
+.hero_main_content__title___button {
+  margin-right: 1.75rem;
+}
+
+.hero_main_content__title_button_wrapper {
+  position: relative;
+}
+
+.littlebluecircle {
+  width: 2.6994rem;
+  height: 2.6994rem;
+  background-color: var(--secondary-color-hero);
+  opacity: 0.3;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.6875rem;
+  left: 15.375rem;
+}
+
+.littlebluecircletwo {
+  width: 2.9994rem;
+  height: 2.9994rem;
+  border: var(--secondary-color-hero) solid 0.125rem;
+  opacity: 0.2;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.8995rem;
+  left: 14.775rem;
+}
+
+.hero_main_content__title___link {
+  color: #0e2a46;
+}
+
+.hero_main_content__title___button {
+  margin-right: 0.9375rem;
+}
+
+.three_marks_image {
+  width: 2.1875rem;
+  height: 2rem;
+  transform: rotate(-6deg);
+  position: absolute;
+  left: 62.0131rem;
+  top: 3.3525rem;
+}
+
+.hero_main_content__topimage__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    position: relative;
+}
+
+.hero_main_content__topimage__wrapper__orange {
+  background-color: var(--primary-color-hero);
+  width: 18.9375rem;
+  height: 24.125rem;
+  border-radius: 50% 0 50% 50%;
+  margin-top: 8.375rem;
+  position: relative;
+}
+
+.little_boy_image {
+  width: 18.9375rem;
+  height: 28.75rem;
+  /* margin-top: 3.75rem; */
+  z-index: 10;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.25rem;
+}
+
+.hero_main_content__topimage__wrapper__studentsinfo {
+  
+ position: absolute;
+  left: -4rem;
+  bottom: 5.3125rem;
+}
+
+.hero_main_content__bottomimage__wrapper{
+    display: flex;
+    flex-direction: column;
+margin-left: 0;
+    margin-right: 0;
+}
+
+.coursesinfo_count{
+    width: 14.9319rem;
+  height: 6.25rem;
+  font-family: var(--font-family-header);
+  background-color: #ffffff;
+    border-radius: 3.125rem;
+    margin-top: 8.5625rem;
+    margin-left: 2.6875rem;
+    padding-left: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.coursesinfo_count h3{
+     font-family: var(--font-family-header);
+    color: #FF9E0E;
+  font-weight: 400;
+  font-size: 2.125rem;
+  margin: 0;
+   line-height: 2rem;
+}
+
+.coursesinfo_count h5{
+    color: #333931;
+    font-weight: 400;
+ font-size: 1rem;
+ margin: 0;
+ line-height: 2rem;
+
+}
+
+.hero_main_content__bottomimage__wrapper_blue{
+    background-color: var(--secondary-color-hero);
+  width: 18.9375rem;
+  height: 24.125rem;
+  border-radius: 50% 50% 50% 0;
+  margin-top: 8.375rem;
+  position: relative;
+}
+
+.little_girl_image {
+  width: 26.125rem;
+  height: 30.375rem;
+  z-index: 10;
+  position: absolute;
+  bottom: 0.1rem;
+  right: -3rem;
+}

@@ -1,0 +1,29 @@
+.btn{
+    color: #FFFFFF;
+    font-family: var(--font-family-header);
+    height: 3.6875rem;
+    border: none;
+    border-radius: 1.8rem;
+    font-size: .9375rem;
+}
+
+.btn--primary{
+    background-color: #FF9500;
+}
+
+.btn--secondary{
+    background-color: #00BEAE;
+}
+
+.page-header_contact___button{
+    width: 8.2794rem;   
+}
+
+.hero_main_content__title___button{
+    width: 12.1206rem;
+}
+
+ .playbutton{
+  width: 3.375rem;
+  height: 3.375rem;
+}

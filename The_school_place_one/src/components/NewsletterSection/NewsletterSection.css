@@ -1,0 +1,52 @@
+ 
+ .newsletter_section_leftside_image{
+ width: 19.875rem;
+  height: 9.75rem;
+  transform: rotate(-2deg);
+  position: absolute;
+  left: -1.5394rem;
+ }
+
+.redarc{
+    position: absolute;
+    left: 64.8rem;
+    top: 5751.67px;
+}
+
+ .newsletter_section{
+    position: relative;
+    width: 100%;
+  max-width: var(--max-width);
+  height: 56.9881rem;
+ }
+
+ .newsletter_section_main_content{
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-top: 7.2737rem;
+ }
+
+ .newsletter_section_heading{
+     font-family: var(--font-family-body);
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 3.6563rem;
+    color: #0E2A46;
+    margin: .625rem 0 2.5rem .9375rem;
+ }
+
+ .newsletter_section_button{
+    width: 10.3956rem;
+    position: absolute;
+    right: 18.75rem;
+    top: 2.5938rem;
+ }
+
+ .newsletter_section_cards_wrapper{
+    display: flex;
+    margin-top: 5rem;
+    gap: 1.5rem;
+ }

@@ -1,0 +1,53 @@
+@import url(../../themes/variables.css);
+@import url(../../themes/global.css);
+@import url(../../themes/normalize.css);
+
+.testimonials_leftside_image{
+     width: 6.25rem;
+  height: 4.5rem;
+  position: absolute;
+  left: 6rem;
+  top: 30.4237rem;
+}
+
+.testimonials_rightside_image{
+    width: 13.4375rem;
+  height: 18.1875rem;
+  position: absolute;
+  top: 3.0187rem;
+  left: 101.6125rem;
+}
+
+.testimonials{
+     display: flex;
+    justify-content: space-between;
+  align-items: center;
+    position: relative;
+    width: 100%;
+  max-width: var(--max-width);
+  height: 45.3544rem;
+}
+
+.testimonials_main_content{
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    display: flex;
+    width: 100%;
+   flex-direction: column;
+    align-items: center;
+    margin-top: 7.5rem;
+}
+
+.testimonials_heading{
+    font-family: var(--font-family-body);
+    font-size: 2.8125rem;
+    font-weight: 700;
+    line-height: 3.6563rem;
+    color: #0E2A46;
+}
+
+.testimonials_wrapper{
+    display: flex;
+    gap: 3.125rem;
+    margin-top: 3.4375rem;
+}

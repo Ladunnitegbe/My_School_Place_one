@@ -1,0 +1,53 @@
+.MultiplePeopleButton {
+  background-color: #ffffff;
+  width: 21.2rem;
+  height: 5.875rem;
+  border-radius: 3rem;
+  position: absolute;
+   z-index: 5;
+   display: flex;
+  align-items: center;
+  
+}
+
+.MultiplePeopleButton_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 2.5rem;
+ 
+  
+}
+
+.MultiplePeopleButton_content {
+  width: 6.4631rem;
+  height: 4rem;
+  font-family: var(--font-family-header);
+  font-size: 1.5625rem;
+  justify-content: center;
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+}
+
+.MultiplePeopleButton_content h4:first-child {
+  color: var(--secondary-color-hero);
+  font-weight: 400;
+  margin: 0;
+  line-height: 2rem;
+}
+
+.MultiplePeopleButton_content h4:last-child {
+  color: var(--third-color-hero);
+  font-weight: 400;
+  margin: 0;
+  line-height: 2rem;
+}
+
+.MultiplePeopleButton_image {
+  width: 8.5rem;
+  height: 2.5rem;
+   object-fit: contain;
+}

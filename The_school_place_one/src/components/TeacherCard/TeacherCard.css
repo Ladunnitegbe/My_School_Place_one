@@ -1,0 +1,46 @@
+
+.teacher_card{
+    width: 18.2813rem;
+    height: 25.6844rem;
+    background-color: #ffffff;
+    border-radius: .3125rem;
+    padding-top: .625rem;
+    padding-left: .625rem;
+    position: relative;
+}
+
+.share-icon{
+    position: absolute;
+    top: 17.3031rem;
+    left: 13.9063rem;
+}
+
+.teacher_card_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher_card_name{
+    
+    height: 1.4438rem;
+    font-family: var(--font-family-body);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    line-height: 1.4438rem;
+    color: #0E2A46;
+    margin-top: 1.5281rem;
+    margin-left: 1.25rem;
+
+}
+
+.teacher_card_title{
+    
+    height: 2rem;
+    font-family: var(--font-family-header);
+    font-size: 1.0625rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: var(--secondary-color-page-banner);
+    margin-top: .1281rem;
+    margin-left: 1.25rem;
+}

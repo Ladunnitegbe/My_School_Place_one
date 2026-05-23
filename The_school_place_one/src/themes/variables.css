@@ -1,0 +1,25 @@
+:root{
+    /* color */
+    --primary-color-page-banner: #00BEAE;
+    --secondary-color-page-banner: #FF9E0E;
+    --background-color-hero: #fff8f0;
+    --primary-color-hero: #FF9500;
+    --secondary-color-hero: #00BEAE;
+    --third-color-hero: #17254E;
+    --background-color-cards: #F3F5F5;
+    
+
+
+    /* font-size */
+    --font-family-header: "Sora", sans-serif;
+    --font-family-body: "Epilogue", sans-serif;
+    --font-family-cards: "Poppins", sans-serif;
+    --font-size-page-banner: 1.0625rem;
+
+    /* measurements */
+    --padding-left: 15%;
+    --padding-right: 15%;
+    --max-width: 120rem;
+
+   
+}

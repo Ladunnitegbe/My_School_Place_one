@@ -1,0 +1,45 @@
+.newsletter_card {
+    width: 26.5rem;
+    height: 31.0194rem;
+    border-radius: .3125rem;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+
+}
+
+.newsletter_card_info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.5313rem;
+    
+}
+
+.newsletter_card_date, .newsletter_card_comment{
+    font-family: var(--font-family-header);
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #4D5756;
+    margin-left: .2906rem;
+    margin-right: 1.3525rem;
+}
+
+.newsletter_card_content_title{
+    width: 22.6563rem;
+    height: 4.9875rem;
+    color: #0E2A46;
+    font-family: var(--font-family-body);
+    font-size: 1.1875rem;
+    line-height: 1.6625rem;
+    font-weight: 600;
+    margin-top: .9181rem;
+}
+
+.newsletter_card_button{
+    width: 8.4031rem;
+    margin-top: 1.2681rem;
+    background-color: #2FC7A1;
+}

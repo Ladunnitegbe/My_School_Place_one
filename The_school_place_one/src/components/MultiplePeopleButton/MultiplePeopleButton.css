@@ -1,13 +1,14 @@
 .MultiplePeopleButton {
   background-color: #ffffff;
-  width: 21.2rem;
-  height: 5.875rem;
+  width: clamp(14rem, 21.2vw, 21.2rem);
+  height: clamp(4rem, 5.875vw, 5.875rem);
   border-radius: 3rem;
-  position: absolute;
-   z-index: 5;
-   display: flex;
+
+  position: relative;
+  z-index: 5;
+  display: flex;
   align-items: center;
-  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .MultiplePeopleButton_wrapper {
@@ -15,39 +16,36 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 2.5rem;
- 
-  
+  padding: 0 clamp(1.25rem, 2.5vw, 2.5rem);
 }
 
 .MultiplePeopleButton_content {
-  width: 6.4631rem;
-  height: 4rem;
-  font-family: var(--font-family-header);
-  font-size: 1.5625rem;
-  justify-content: center;
-  gap: 0.25rem;
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
+  justify-content: center;
+  gap: 0;
+  font-family: var(--font-family-header);
 }
 
 .MultiplePeopleButton_content h4:first-child {
   color: var(--secondary-color-hero);
   font-weight: 400;
   margin: 0;
-  line-height: 2rem;
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.56vw, 1.5625rem);
 }
 
 .MultiplePeopleButton_content h4:last-child {
   color: var(--third-color-hero);
   font-weight: 400;
   margin: 0;
-  line-height: 2rem;
+  line-height: 1.6;
+  font-size: clamp(0.875rem, 1.25vw, 1.25rem);
 }
 
 .MultiplePeopleButton_image {
-  width: 8.5rem;
-  height: 2.5rem;
-   object-fit: contain;
+  width: clamp(5rem, 8.5vw, 8.5rem);
+  height: clamp(1.5rem, 2.5vw, 2.5rem);
+  object-fit: contain;
+  flex-shrink: 0;
 }

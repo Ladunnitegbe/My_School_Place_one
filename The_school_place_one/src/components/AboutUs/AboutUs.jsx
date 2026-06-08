@@ -13,13 +13,10 @@ export function AboutUs() {
   return (
     <>
       <section className="about_us_section">
-        <div className="red_dot"></div>
-        <div className="orange_dot"></div>
-        <div className="aqua_dot"></div>
-
         <aside className="about_us_section_aside side_image">
           <img src={Cloud} alt="Cloud" className="about_us_leftside_image" />
         </aside>
+
         <main className="about_us_main_content">
           <MultiplePeopleButton
             count="Happy"
@@ -45,45 +42,49 @@ export function AboutUs() {
           <article className="about_us_article">
             <div className="about_us_article_title">
               <Bookicon className="about_us_article_title_icon" />
-              <h5 className="about_us_article_title_text">
-                ABOUT US
-              </h5>
+              <h5 className="about_us_article_title_text">ABOUT US</h5>
             </div>
             <h2 className="about_us_article_heading">
-              It's our passion to work with children at <span>kindergarten.</span>
+              It's our passion to work with children at{" "}
+              <span>kindergarten.</span>
             </h2>
-            <p className="about_us_article_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud..
+            <p className="about_us_article_paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud..
             </p>
             <ul className="about_us_article_tags_wrapper">
-                        <li><div className="about_us_article_tags">
-                            <Tick className="about_us_article_tags_icon"/>
-                        QUALITY EDUCATORS
-                        </div>
-                        </li>
-
-                        <li><div className="about_us_article_tags">
-                            <Tick className="about_us_article_tags_icon"/>
-                        PLAY TO LEARN
-                        </div>
-                        </li>
-                        <li><div className="about_us_article_tags">
-                            <Tick className="about_us_article_tags_icon"/>
-                        SAFETY AND SECURITY
-                        </div>  
-                        </li>
-                        <li><div className="about_us_article_tags">
-                            <Tick className="about_us_article_tags_icon"/>
-                        HOMELIKE ENVIROMENT
-                        </div>
-                        </li>
+              <li>
+                <div className="about_us_article_tags">
+                  <Tick className="about_us_article_tags_icon" />
+                  QUALITY EDUCATORS
+                </div>
+              </li>
+              <li>
+                <div className="about_us_article_tags">
+                  <Tick className="about_us_article_tags_icon" />
+                  PLAY TO LEARN
+                </div>
+              </li>
+              <li>
+                <div className="about_us_article_tags">
+                  <Tick className="about_us_article_tags_icon" />
+                  SAFETY AND SECURITY
+                </div>
+              </li>
+              <li>
+                <div className="about_us_article_tags">
+                  <Tick className="about_us_article_tags_icon" />
+                  HOMELIKE ENVIROMENT
+                </div>
+              </li>
             </ul>
             <Button className="btn--primary about_us__button">
-                Admission Open
+              Admission Open
             </Button>
           </article>
         </main>
+
         <aside className="about_us_section_aside side_image">
           <img
             src={Birdsontreeright}

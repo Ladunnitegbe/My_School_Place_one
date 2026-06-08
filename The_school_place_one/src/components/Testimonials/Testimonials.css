@@ -2,52 +2,60 @@
 @import url(../../themes/global.css);
 @import url(../../themes/normalize.css);
 
-.testimonials_leftside_image{
-     width: 6.25rem;
-  height: 4.5rem;
+.testimonials_leftside_image {
+  width: clamp(3rem, 6.25vw, 6.25rem);
+  height: auto;
   position: absolute;
-  left: 6rem;
-  top: 30.4237rem;
+  left: 4rem;
+  bottom: 3rem;
 }
 
-.testimonials_rightside_image{
-    width: 13.4375rem;
-  height: 18.1875rem;
+.testimonials_rightside_image {
+  width: clamp(7rem, 13.44vw, 13.4375rem);
+  height: auto;
   position: absolute;
-  top: 3.0187rem;
-  left: 101.6125rem;
+  top: 3rem;
+  right: 0;
 }
 
-.testimonials{
-     display: flex;
-    justify-content: space-between;
+.testimonials {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-    position: relative;
-    width: 100%;
-  max-width: var(--max-width);
-  height: 45.3544rem;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 30rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
 }
 
-.testimonials_main_content{
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    display: flex;
-    width: 100%;
-   flex-direction: column;
-    align-items: center;
-    margin-top: 7.5rem;
+.testimonials_main_content {
+  padding-left: clamp(2rem, 6.25vw, 7.5rem);
+  padding-right: clamp(2rem, 6.25vw, 7.5rem);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(3rem, 7.5vw, 7.5rem);
+  box-sizing: border-box;
 }
 
-.testimonials_heading{
-    font-family: var(--font-family-body);
-    font-size: 2.8125rem;
-    font-weight: 700;
-    line-height: 3.6563rem;
-    color: #0E2A46;
+.testimonials_heading {
+  font-family: var(--font-family-body);
+  font-size: clamp(1.75rem, 2.81vw, 2.8125rem);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #0E2A46;
+  text-align: center;
 }
 
-.testimonials_wrapper{
-    display: flex;
-    gap: 3.125rem;
-    margin-top: 3.4375rem;
+.testimonials_wrapper {
+  display: flex;
+  gap: clamp(1rem, 3.13vw, 3.125rem);
+  margin-top: clamp(2rem, 3.44vw, 3.4375rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }

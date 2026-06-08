@@ -1,29 +1,58 @@
-.btn{
-    color: #FFFFFF;
-    font-family: var(--font-family-header);
-    height: 3.6875rem;
-    border: none;
-    border-radius: 1.8rem;
-    font-size: .9375rem;
+.btn {
+  color: #FFFFFF;
+  font-family: var(--font-family-header);
+  height: clamp(2.75rem, 3.69vw, 3.6875rem);
+  border: none;
+  border-radius: 1.8rem;
+  font-size: clamp(0.8125rem, 0.94vw, 0.9375rem);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 clamp(1rem, 1.5vw, 1.5rem);
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.15s ease;
 }
 
-.btn--primary{
-    background-color: #FF9500;
+.btn:hover:not(.btn--disabled) {
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
-.btn--secondary{
-    background-color: #00BEAE;
+.btn:active:not(.btn--disabled) {
+  transform: translateY(0);
 }
 
-.page-header_contact___button{
-    width: 8.2794rem;   
+.btn--primary {
+  background-color: #FF9500;
 }
 
-.hero_main_content__title___button{
-    width: 12.1206rem;
+.btn--secondary {
+  background-color: #00BEAE;
 }
 
- .playbutton{
-  width: 3.375rem;
-  height: 3.375rem;
+.btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ─── Specific button overrides ─── */
+
+.page-header_contact___button {
+  min-width: clamp(6rem, 8.28vw, 8.2794rem);
+  padding: 0 clamp(0.75rem, 1.25vw, 1.25rem);
+}
+
+.hero_main_content__title___button {
+  min-width: clamp(9rem, 12.12vw, 12.1206rem);
+}
+
+/* Play circle button */
+.playbutton {
+  width: clamp(2.5rem, 3.375vw, 3.375rem);
+  height: clamp(2.5rem, 3.375vw, 3.375rem);
+  border-radius: 50%;
+  padding: 0;
+  min-width: unset;
+  flex-shrink: 0;
 }

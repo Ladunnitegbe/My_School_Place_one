@@ -15,13 +15,14 @@ export function Hero() {
   return (
     <>
       <section className="hero">
-        <aside className=" aside side_image">
+        <aside className="aside side_image">
           <img
             src={Birdsontree}
             alt="Birds on Tree"
             className="leftside_image"
           />
         </aside>
+
         <main className="hero_main_content">
           <img
             src={Cross}
@@ -34,6 +35,7 @@ export function Hero() {
             alt="Three Marks"
             className="three_marks_image"
           />
+
           <div className="hero_main_content__title">
             <div className="hero_main_content__title___header_container">
               <h1 className="hero_main_content__title___header">
@@ -45,6 +47,7 @@ export function Hero() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+
             <div className="hero_main_content__title_button_wrapper">
               <Button className="btn--primary hero_main_content__title___button">
                 Browse Courses
@@ -93,6 +96,7 @@ export function Hero() {
             </div>
           </div>
         </main>
+
         <aside className="aside side_image">
           <img src={Smilingsun} alt="Smiling Sun" className="rightside_image" />
           <img src={Cross} alt="Cross" className="rightside_image__crossicon" />

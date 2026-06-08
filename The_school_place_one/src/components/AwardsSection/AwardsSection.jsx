@@ -5,12 +5,18 @@ import Shakinghands from "../../assets/images/awards_section_images/shakinghands
 import Classroompeople from "../../assets/images/awards_section_images/classroompeople.svg?react";
 import Awardsicon from "../../assets/images/awards_section_images/awardsicon.svg?react";
 import Linestar from "../../assets/images/awards_section_images/linestar.svg?react";
+import AwardBackground from "../../assets/images/awards_section_images/Background.png";
 
 export function AwardsSection() {
   return (
     <>   
     
     <section className="awards_section">
+        <img
+                        src={AwardBackground}
+                        alt="Background showing kids playing"
+                        className="award_background"
+                      />
       <Linestar className="awards_section_linestar_icon" />
       
         <div className="awards_section_content_wrapper">

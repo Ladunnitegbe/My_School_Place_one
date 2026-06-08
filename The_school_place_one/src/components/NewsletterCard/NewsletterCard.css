@@ -1,45 +1,65 @@
 .newsletter_card {
-    width: 26.5rem;
-    height: 31.0194rem;
-    border-radius: .3125rem;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-
+  flex: 1 1 clamp(18rem, 26.5vw, 26.5rem);
+  max-width: 26.5rem;
+  height: auto;
+  border-radius: 0.3125rem;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1rem, 1.875vw, 1.875rem);
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-.newsletter_card_info{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 1.5313rem;
-    
+/* Card image fills full width */
+.newsletter_card_image {
+  width: 100%;
+  height: clamp(10rem, 13vw, 14rem);
+  object-fit: cover;
+  border-radius: 0.25rem;
+  display: block;
+  flex-shrink: 0;
 }
 
-.newsletter_card_date, .newsletter_card_comment{
-    font-family: var(--font-family-header);
-    font-size: .9375rem;
-    font-weight: 400;
-    line-height: 2rem;
-    color: #4D5756;
-    margin-left: .2906rem;
-    margin-right: 1.3525rem;
+.newsletter_card_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: clamp(0.875rem, 1.53vw, 1.5313rem);
+  flex-wrap: wrap;
+  gap: 0.25rem;
 }
 
-.newsletter_card_content_title{
-    width: 22.6563rem;
-    height: 4.9875rem;
-    color: #0E2A46;
-    font-family: var(--font-family-body);
-    font-size: 1.1875rem;
-    line-height: 1.6625rem;
-    font-weight: 600;
-    margin-top: .9181rem;
+.newsletter_card_calender_icon,
+.newsletter_card_comment_icon {
+  flex-shrink: 0;
 }
 
-.newsletter_card_button{
-    width: 8.4031rem;
-    margin-top: 1.2681rem;
-    background-color: #2FC7A1;
+.newsletter_card_date,
+.newsletter_card_comment {
+  font-family: var(--font-family-header);
+  font-size: clamp(0.75rem, 0.94vw, 0.9375rem);
+  font-weight: 400;
+  line-height: 2rem;
+  color: #4D5756;
+  margin-left: 0.2906rem;
+  margin-right: clamp(0.5rem, 1.35vw, 1.3525rem);
+}
+
+.newsletter_card_content_title {
+  width: 100%;
+  color: #0E2A46;
+  font-family: var(--font-family-body);
+  font-size: clamp(1rem, 1.19vw, 1.1875rem);
+  line-height: 1.5;
+  font-weight: 600;
+  margin-top: clamp(0.625rem, 0.92vw, 0.9181rem);
+  flex: 1 1 auto;
+}
+
+.newsletter_card_button {
+  min-width: clamp(7rem, 8.4vw, 8.4031rem);
+  margin-top: clamp(0.875rem, 1.27vw, 1.2681rem);
+  background-color: #2FC7A1;
+  align-self: flex-start;
 }

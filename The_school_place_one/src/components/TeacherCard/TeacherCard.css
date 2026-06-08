@@ -1,46 +1,55 @@
-
-.teacher_card{
-    width: 18.2813rem;
-    height: 25.6844rem;
-    background-color: #ffffff;
-    border-radius: .3125rem;
-    padding-top: .625rem;
-    padding-left: .625rem;
-    position: relative;
+.teacher_card {
+  flex: 1 1 clamp(12rem, 18.28vw, 18.2813rem);
+  max-width: 18.2813rem;
+  background-color: #ffffff;
+  border-radius: 0.3125rem;
+  padding-top: 0.625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.share-icon{
-    position: absolute;
-    top: 17.3031rem;
-    left: 13.9063rem;
+/* Teacher photo — named class for precise targeting */
+.teacher_card_photo {
+  width: 100%;
+  height: clamp(13rem, 17vw, 19rem);
+  object-fit: cover;
+  border-radius: 0.25rem;
+  display: block;
 }
 
-.teacher_card_info{
-    display: flex;
-    flex-direction: column;
+/* Share icon — anchored relative to card */
+.share-icon {
+  position: absolute;
+  top: clamp(9.5rem, 12.5vw, 15rem);
+  right: clamp(0.75rem, 1.5vw, 1.5rem);
+  cursor: pointer;
+  z-index: 2;
 }
 
-.teacher_card_name{
-    
-    height: 1.4438rem;
-    font-family: var(--font-family-body);
-    font-size: 1.3125rem;
-    font-weight: 700;
-    line-height: 1.4438rem;
-    color: #0E2A46;
-    margin-top: 1.5281rem;
-    margin-left: 1.25rem;
-
+.teacher_card_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(0.75rem, 1.53vw, 1.5281rem);
 }
 
-.teacher_card_title{
-    
-    height: 2rem;
-    font-family: var(--font-family-header);
-    font-size: 1.0625rem;
-    line-height: 2rem;
-    font-weight: 400;
-    color: var(--secondary-color-page-banner);
-    margin-top: .1281rem;
-    margin-left: 1.25rem;
+.teacher_card_name {
+  font-family: var(--font-family-body);
+  font-size: clamp(1rem, 1.31vw, 1.3125rem);
+  font-weight: 700;
+  line-height: 1.4;
+  color: #0E2A46;
+  margin: 0 0 0.125rem 1.25rem;
+}
+
+.teacher_card_title {
+  font-family: var(--font-family-header);
+  font-size: clamp(0.875rem, 1.06vw, 1.0625rem);
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--secondary-color-page-banner);
+  margin: 0 0 0 1.25rem;
 }

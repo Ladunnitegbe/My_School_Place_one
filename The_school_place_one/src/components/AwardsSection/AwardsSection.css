@@ -2,85 +2,103 @@
 @import url(../../themes/global.css);
 @import url(../../themes/normalize.css);
 
-
 .awards_section {
- background-image: url(../../assets/images/awards_section_images/Background.png);
- background-size:contain;
+  /* background-image: url(../../assets/images/awards_section_images/Background.png);
+  background-size: cover;
   background-position: start;
-  background-repeat: no-repeat;
-  height: 72.125rem;
+  background-repeat: no-repeat; */
+  height: auto;
+  min-height: 30rem;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: end;
+
+
 }
 
-.awards_section_content_wrapper{
-    width: 100%;
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    display: flex;
-    padding-top: 0rem;
-    padding-bottom: 8.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.award_background{
+height: auto;
+  min-height: 30rem;
+  width: 100%;
+  max-width: 100%;
 }
 
-.awards_section_linestar_icon{
-    position: absolute;
-    top: 188.2781rem;
-    left: 107.6631rem;
+.awards_section_content_wrapper {
+  width: 100%;
+  padding-left: clamp(2rem, 6.25vw, 7.5rem);
+  padding-right: clamp(2rem, 6.25vw, 7.5rem);
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  box-sizing: border-box;
 }
 
-.awards_section_article{
-    /* padding-right: 7.5525rem;
-    padding-left: 7.2287rem; */
-    width: 18.75rem;
-    border-right: .125rem dashed #0E2A46;
-    height: 12.5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.awards_section_linestar_icon {
+  /* position: absolute; */
+  top: 2rem;
+  right: 3rem;
+  width: clamp(2rem, 6.33vw, 8rem);
 }
 
-.awards_section_article_four{
-    border-right: none;
+.awards_section_article {
+  flex: 1 1 clamp(10rem, 14.06vw, 18.75rem);
+  max-width: 18.75rem;
+  border-right: 0.125rem dashed #0E2A46;
+  min-height: 12.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
-.awards_section_article_icon_wrapper_dashed{
-    width: 6.0938rem;
-    height: 6.0938rem;
-    border-radius: 3.0469rem;
-    border: .0625rem dashed #0E2A46;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.awards_section_article:last-child,
+.awards_section_article_four {
+  border-right: none;
 }
 
-.awards_section_article_icon_wrapper{
-    width: 4.875rem;
-    height: 4.875rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #FC9F0B;
-    border-radius: 2.375rem;
+.awards_section_article_icon_wrapper_dashed {
+  width: clamp(4rem, 6.09vw, 6.0938rem);
+  height: clamp(4rem, 6.09vw, 6.0938rem);
+  border-radius: 50%;
+  border: 0.0625rem dashed #0E2A46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.awards_section_article_value{
-    font-family: var(--font-family-body);
-    font-size: 2.4375rem;
-    line-height: 2.4375rem;
-    margin-top: 1.2344rem;
-    align-self: center;
+.awards_section_article_icon_wrapper {
+  width: clamp(3rem, 4.88vw, 4.875rem);
+  height: clamp(3rem, 4.88vw, 4.875rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FC9F0B;
+  border-radius: 50%;
 }
 
-.awards_section_article_heading{
-    font-family: var(--font-family-header);
-    font-size: 1.3125rem;
-    font-weight: 400;
-    margin-top: .6563rem;
+.awards_section_article_value {
+  font-family: var(--font-family-body);
+  font-size: clamp(1.5rem, 2.44vw, 2.4375rem);
+  line-height: 1.2;
+  margin-top: 1rem;
+  align-self: center;
+  font-weight: bold;
+  color: #0E2A46;
+}
+
+.awards_section_article_heading {
+  font-family: var(--font-family-header);
+  font-size: clamp(0.875rem, 1.31vw, 1.3125rem);
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: center;
 }

@@ -1,25 +1,55 @@
-:root{
-    /* color */
-    --primary-color-page-banner: #00BEAE;
-    --secondary-color-page-banner: #FF9E0E;
-    --background-color-hero: #fff8f0;
-    --primary-color-hero: #FF9500;
-    --secondary-color-hero: #00BEAE;
-    --third-color-hero: #17254E;
-    --background-color-cards: #F3F5F5;
-    
+:root {
+  /* ── Colors ── */
+  --primary-color-page-banner:   #00BEAE;
+  --secondary-color-page-banner: #FF9E0E;
 
+  --background-color-hero:  #fff8f0;
+  --primary-color-hero:     #FF9500;
+  --secondary-color-hero:   #00BEAE;
+  --third-color-hero:       #17254E;
 
-    /* font-size */
-    --font-family-header: "Sora", sans-serif;
-    --font-family-body: "Epilogue", sans-serif;
-    --font-family-cards: "Poppins", sans-serif;
-    --font-size-page-banner: 1.0625rem;
+  --background-color-cards: #F3F5F5;
 
-    /* measurements */
-    --padding-left: 15%;
-    --padding-right: 15%;
-    --max-width: 120rem;
+  /* ── Typography ── */
+  --font-family-header: "Sora",     sans-serif;
+  --font-family-body:   "Epilogue", sans-serif;
+  --font-famliy-cards:  "Poppins",  sans-serif; 
+  --font-size-page-banner: 0.875rem;
 
+  /* ── Layout ── */
+  
    
+  --padding-left:  clamp(1.25rem, 6.25vw, 7.5rem);
+  --padding-right: clamp(1.25rem, 6.25vw, 7.5rem);
+
+  --container-width: 100%;
+}
+
+/* Mobile & small tablets — comfortable floor */
+@media (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Tablets & small desktops — 1440px design target */
+@media (min-width: 768px) and (max-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Fluid ramp from 1440px → 1920px */
+@media (min-width: 1441px) and (max-width: 1919px) {
+  html {
+    /* Interpolates smoothly: 14px at 1441px → 16px at 1920px */
+    font-size: clamp(14px, calc(0.4167vw + 8px), 16px);
+  }
+}
+
+/* Full 1920px design canvas and above — cap at 16px */
+@media (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
 }
